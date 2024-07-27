@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD1158E02C52E34C00AE0D23 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1158DF2C52E34C00AE0D23 /* Crypto.swift */; };
+		CD1158E22C52FE2100AE0D23 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1158E12C52FE2100AE0D23 /* Webservice.swift */; };
+		CD157AB52C54663A00560930 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CD157AB42C54663A00560930 /* RxCocoa */; };
+		CD157ABD2C54663A00560930 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CD157ABC2C54663A00560930 /* RxSwift */; };
 		CDB87B442C517566006A19F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB87B432C517566006A19F1 /* AppDelegate.swift */; };
 		CDB87B462C517566006A19F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB87B452C517566006A19F1 /* SceneDelegate.swift */; };
 		CDB87B482C517566006A19F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB87B472C517566006A19F1 /* ViewController.swift */; };
 		CDB87B4B2C517566006A19F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB87B492C517566006A19F1 /* Main.storyboard */; };
 		CDB87B4D2C517567006A19F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB87B4C2C517567006A19F1 /* Assets.xcassets */; };
 		CDB87B502C517567006A19F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDB87B4E2C517567006A19F1 /* LaunchScreen.storyboard */; };
+		CDC4EB0D2C543D8F0078D44E /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4EB0C2C543D8F0078D44E /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD1158DF2C52E34C00AE0D23 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		CD1158E12C52FE2100AE0D23 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		CDB87B402C517566006A19F1 /* CryptoCrazyRxMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCrazyRxMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB87B432C517566006A19F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDB87B452C517566006A19F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		CDB87B4C2C517567006A19F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB87B4F2C517567006A19F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDB87B512C517567006A19F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC4EB0C2C543D8F0078D44E /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +39,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD157AB52C54663A00560930 /* RxCocoa in Frameworks */,
+				CD157ABD2C54663A00560930 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD1158DB2C52D1F800AE0D23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDB87B432C517566006A19F1 /* AppDelegate.swift */,
+				CDB87B452C517566006A19F1 /* SceneDelegate.swift */,
+				CDB87B472C517566006A19F1 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD1158DC2C52D21B00AE0D23 /* VievModel */ = {
+			isa = PBXGroup;
+			children = (
+				CDC4EB0C2C543D8F0078D44E /* CryptoViewModel.swift */,
+			);
+			path = VievModel;
+			sourceTree = "<group>";
+		};
+		CD1158DD2C52D22700AE0D23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD1158DF2C52E34C00AE0D23 /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD1158DE2C52D2A600AE0D23 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD1158E12C52FE2100AE0D23 /* Webservice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CDB87B372C517566006A19F1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +100,10 @@
 		CDB87B422C517566006A19F1 /* CryptoCrazyRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				CDB87B432C517566006A19F1 /* AppDelegate.swift */,
-				CDB87B452C517566006A19F1 /* SceneDelegate.swift */,
-				CDB87B472C517566006A19F1 /* ViewController.swift */,
+				CD1158DE2C52D2A600AE0D23 /* Service */,
+				CD1158DD2C52D22700AE0D23 /* Model */,
+				CD1158DC2C52D21B00AE0D23 /* VievModel */,
+				CD1158DB2C52D1F800AE0D23 /* View */,
 				CDB87B492C517566006A19F1 /* Main.storyboard */,
 				CDB87B4C2C517567006A19F1 /* Assets.xcassets */,
 				CDB87B4E2C517567006A19F1 /* LaunchScreen.storyboard */,
@@ -83,6 +128,10 @@
 			dependencies = (
 			);
 			name = CryptoCrazyRxMVVM;
+			packageProductDependencies = (
+				CD157AB42C54663A00560930 /* RxCocoa */,
+				CD157ABC2C54663A00560930 /* RxSwift */,
+			);
 			productName = CryptoCrazyRxMVVM;
 			productReference = CDB87B402C517566006A19F1 /* CryptoCrazyRxMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = CDB87B372C517566006A19F1;
+			packageReferences = (
+				CDC4EB0E2C543F8A0078D44E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = CDB87B412C517566006A19F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1158E02C52E34C00AE0D23 /* Crypto.swift in Sources */,
 				CDB87B482C517566006A19F1 /* ViewController.swift in Sources */,
 				CDB87B442C517566006A19F1 /* AppDelegate.swift in Sources */,
+				CD1158E22C52FE2100AE0D23 /* Webservice.swift in Sources */,
 				CDB87B462C517566006A19F1 /* SceneDelegate.swift in Sources */,
+				CDC4EB0D2C543D8F0078D44E /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +418,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDC4EB0E2C543F8A0078D44E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD157AB42C54663A00560930 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDC4EB0E2C543F8A0078D44E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CD157ABC2C54663A00560930 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDC4EB0E2C543F8A0078D44E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDB87B382C517566006A19F1 /* Project object */;
 }
